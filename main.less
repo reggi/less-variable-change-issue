@@ -1,4 +1,9 @@
-@import "./variable-green.less";
-@import "./usage.less";
-@import "./variable-orange.less";
-@import "./usage.less";
+& {
+  @import "./variable-green.less";
+  @import (multiple) "./usage.less";
+}
+
+& { 
+  @import "./variable-orange.less";
+  @import (multiple) "./usage.less"; 
+}
